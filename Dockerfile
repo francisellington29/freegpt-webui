@@ -6,6 +6,7 @@ COPY requirements.txt requirements.txt
   
 RUN python -m venv venv  
 ENV PATH="/app/venv/bin:$PATH"  
+EXPOSE 1338
   
 RUN apt-get update && \  
     apt-get install -y --no-install-recommends build-essential libffi-dev cmake libcurl4-openssl-dev && \  
